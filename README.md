@@ -14,11 +14,11 @@ Git commands for daily use:
 
 1) run git fetch upstream and git merge before pushing changes
 2) git add
-3) git commit -m "1) Added regular_2day_S2H_only2day in items_production.json 2) Added test case : Add a S2H Only  item, verify POS [C787067]"
+3) git commit -m "commit message"
 4) git push origin master   -- this pushes to my GitHub account
 5) go to github and create a pr
 
-http://10.116.136.77:8080/
+
 
 Important concepts with GitHub:
 
@@ -73,10 +73,7 @@ and then we try git push --set-upstream origin release-18-8-4 , so this creates 
 
    When we do git remote -v we would know if we have setup an upstream
    m-c02w211rhtdg:checkout-service-commons vn0aifb$ git remote -v
-   origin	https://gecgithub01.walmart.com/vn0aifb/checkout-service-commons.git (fetch)
-   origin	https://gecgithub01.walmart.com/vn0aifb/checkout-service-commons.git (push)
-   upstream	https://gecgithub01.walmart.com/services/checkout-service-commons (fetch)
-   upstream	https://gecgithub01.walmart.com/services/checkout-service-commons (push)
+
 
    to add an upstream --> git remote add upstream "url of the main repo in quotes"
 
@@ -97,7 +94,7 @@ and then we try git push --set-upstream origin release-18-8-4 , so this creates 
      to find difference in a file between two branches
      git diff  release-19-2-13 master -- com.walmart.services.checkout.adapter.promise/PromiseServiceRequestResponseUtils.java
 
-     or To get to the compare view on GitHub, append /compare to your repository's path example: https://gecgithub01.walmart.com/services/checkout-service-usgm/compare
+     or To get to the compare view on GitHub, append /compare to your repository's path example: https://<repourl>/compare
 
      Some nice to know points on Git commands:
      1) never do a git revert if you are not happy with last commit instead use git reset
